@@ -1,0 +1,1 @@
+console.log('This is the JS from your index page')

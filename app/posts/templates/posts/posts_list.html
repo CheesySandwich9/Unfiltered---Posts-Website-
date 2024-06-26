@@ -1,0 +1,28 @@
+{% extends "template.html" %}
+
+{%block title%}
+    Unfiltered - Explore Posts
+{%endblock%}
+
+{%block content%}
+
+<main>
+    <section>
+        <h1>Explore Posts</h1>
+</main>
+        <div class="post-container">
+            {% for post in posts %}
+                <a class = "posts-page-href" href="{% url 'posts:page' slug=post.slug %}">
+                    <div class="post-card">
+                        <img class="mini-banner" src="{{post.banner.url}}" alt="{{post.title}}"/>
+                        <h6>
+                            {{post.title}}       
+                        </h6>
+                        <p class="p-date">by {{post.author}}</p>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+    </section>
+
+{%endblock%}

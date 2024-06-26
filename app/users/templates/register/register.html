@@ -1,0 +1,22 @@
+{% extends 'template.html' %}
+
+{%block title%}
+    Unfiltered - User Registration
+{%endblock%}
+
+{%block content%}
+
+    <main>
+        <h1>
+            Create an account
+        </h1>
+        <div class = form-div-reg>
+            <form class = "form-with-validation" action="{% url 'users:register' %}" method="post">
+                {% csrf_token %}
+                {{form}}
+                <button class="form-submit" style="display: block; margin: auto;">Register</button>
+            </form>
+        </div>
+    </main>
+
+{%endblock%}

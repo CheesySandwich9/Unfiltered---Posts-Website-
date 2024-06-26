@@ -1,0 +1,28 @@
+{% extends "template.html" %}
+{% load static %}
+
+{%block title%}
+    Unfiltered - Home
+{%endblock%}
+
+{%block content%}
+
+    <div class="content">
+        <div class="left-section">
+            <img src="{% static 'icon/full-logo.png' %}" width="275px" height = "155px" alt="Logo">
+            <h2>Welcome to Unfiltered</h2>
+            <p>Unfiltered is a personal posts website project :-</p>
+            <ul type='circle'>
+                <li>This web application stores and displays user made posts.</li>
+                <li>Every user can explore posts made by other users.</li>
+                <li>Users who are registered and logged in can make their own posts.</li>
+                <li>Users can register or login using their username and password and logout when needed.</li>
+                <li>Click on "About" in the nav bar for more project related information.</li>
+            </ul>
+        </div>
+        <div class="right-section">
+            <img class="home-img" src="{% static 'icon/home-img.jpg' %}" alt="Large Image">
+        </div>
+    </div>
+
+{%endblock%}

@@ -1,0 +1,31 @@
+{% extends "template.html" %}
+{% load static %}
+
+{%block title%}
+    Unfiltered - About
+{%endblock%}
+
+{%block content%}
+
+<div class="content">
+    <div class="left-section">
+        <img class = "logo-big"src="{% static 'icon/full-logo.png' %}" width="275px" height = "155px" alt="Logo">
+        <h2>About the project</h2>
+        <p>Unfiltered is is a personal posts website project :-</p>
+        <ul type='circle'>
+            <li>This project was built using the Django framework in Python.</li>
+            <li>The backend uses Django ORM and a MySQL database.</li>
+            <li>The frontend was made using vanilla HTML and CSS.</li>
+            <li>This project is currently only being hosted locally.</li>
+            <li>The project code can be found on my <u><a class="git-acc" href="https://github.com/CheesySandwich9" target="_blank">github account</a>.</u></li>
+        </ul>
+    </div>
+    <div class="right-section">
+        <img src="{% static 'icon/python.png' %}" alt="techstack">
+        <img src="{% static 'icon/django.png' %}" alt="techstack">
+        <img src="{% static 'icon/html-css.jpg' %}" alt="techstack">
+    </div>
+</div>
+
+    
+{%endblock%}
